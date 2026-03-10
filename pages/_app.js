@@ -6,6 +6,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <meta name="google-adsense-account" content="ca-pub-3820542608983749" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
