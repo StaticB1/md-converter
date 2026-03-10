@@ -215,6 +215,8 @@ export default function Home() {
               <button style={s.modeBtn(mode === 'html2md')} onClick={() => setMode('html2md')}>HTML → MD</button>
             </div>
             <button style={s.swapBtn} onClick={handleSwap}>⇅ Swap</button>
+            <Link href="/about" style={s.navLink}>About</Link>
+            <Link href="/privacy" style={s.navLink}>Privacy</Link>
           </div>
         </header>
 
@@ -362,6 +364,7 @@ const s = {
   modeGroup: { display: 'flex', background: '#1a1c23', borderRadius: 10, padding: 4, gap: 4, border: '1px solid rgba(255,255,255,0.07)' },
   modeBtn: (a) => ({ padding: '7px 16px', borderRadius: 7, border: 'none', cursor: 'pointer', fontFamily: MONO, fontSize: 12, fontWeight: 600, transition: 'all .2s', background: a ? 'linear-gradient(135deg,#6ee7b722,#3b82f622)' : 'transparent', color: a ? GREEN : 'rgba(255,255,255,0.35)' }),
   swapBtn: { background: 'linear-gradient(135deg,#6ee7b720,#3b82f620)', border: '1px solid #6ee7b740', color: GREEN, borderRadius: 8, padding: '7px 14px', fontSize: 12, fontFamily: MONO, fontWeight: 600, cursor: 'pointer' },
+  navLink: { fontFamily: MONO, fontSize: 11, color: 'rgba(255,255,255,0.4)', textDecoration: 'none', letterSpacing: '0.04em' },
 
   workspace: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, padding: '0 24px', flex: 1, minHeight: 500 },
   panel: { background: '#13151c', border: '1px solid rgba(255,255,255,0.07)', borderRadius: 12, display: 'flex', flexDirection: 'column', overflow: 'hidden', minHeight: 480 },
