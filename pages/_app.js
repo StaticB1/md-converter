@@ -1,3 +1,4 @@
+/* yeah*/
 import '../styles/globals.css'
 import Head from 'next/head'
 
@@ -10,6 +11,11 @@ export default function App({ Component, pageProps }) {
         <link
           href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@400;600;700;800&display=swap"
           rel="stylesheet"
+        />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3820542608983749"
+          crossOrigin="anonymous"
         />
       </Head>
       <Component {...pageProps} />
