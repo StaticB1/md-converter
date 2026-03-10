@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { useState, useCallback, useRef } from 'react';
 
 // ── Markdown → HTML ──────────────────────────────────────────────────────────
@@ -329,7 +330,10 @@ export default function Home() {
         {/* ── Footer ── */}
         <footer style={s.footer}>
           <span>MD ↔ HTML Converter · Free Online Tool · No signup required</span>
-          <span>Built with Next.js · Deployed on Vercel</span>
+          <span style={{ display: 'flex', gap: 20 }}>
+            <Link href="/about" style={{ color: 'rgba(255,255,255,0.3)', textDecoration: 'none' }}>About</Link>
+            <Link href="/privacy" style={{ color: 'rgba(255,255,255,0.3)', textDecoration: 'none' }}>Privacy</Link>
+          </span>
         </footer>
 
         {/* ── Toast ── */}
